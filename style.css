@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    background-color: rgb(168, 205, 212);
+    height: 75px;
+    width: 312px;
+    font-size: 75px;
+    text-align: right;
+    border: 3px solid black;
+    margin-bottom: 5px;
+}
+
+button {
+    width: 75px;
+    height: 75px;
+    background-color: rgb(75, 177, 211);
+    margin-bottom: 5px;
+}
+
+.calculator {
+    background-color: rgb(121, 121, 121);
+    padding: 10px;
+}
+
+.zero {
+    width: 154px
+}
