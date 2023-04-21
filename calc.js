@@ -32,6 +32,7 @@ function operate(firstNum, secondNum, operator) {
 }
 
 function buttonCall() {
+    const count = 0;
     showOnDisplay('.zero', 0);
     showOnDisplay('.one', 1);
     showOnDisplay('.two', 2);
@@ -44,12 +45,13 @@ function buttonCall() {
     showOnDisplay('.nine', 9);
 }
 
-function showOnDisplay(buttonClass, number) {
+function showOnDisplay(buttonClass, number, count) {
     const display = document.querySelector('.display');
     const button = document.querySelector(buttonClass);
     button.addEventListener('click', () => {
-        display.textContent += number;
-    })
+        if (display.textContent.length < 8)
+            display.textContent += number;
+    });
 }
 
 buttonCall();
