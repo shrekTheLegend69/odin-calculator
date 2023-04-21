@@ -30,3 +30,26 @@ function operate(firstNum, secondNum, operator) {
     else 
         return "ERROR";
 }
+
+function buttonCall() {
+    showOnDisplay('.zero', 0);
+    showOnDisplay('.one', 1);
+    showOnDisplay('.two', 2);
+    showOnDisplay('.three', 3);
+    showOnDisplay('.four', 4);
+    showOnDisplay('.five', 5);
+    showOnDisplay('.six', 6);
+    showOnDisplay('.seven', 7);
+    showOnDisplay('.eight', 8);
+    showOnDisplay('.nine', 9);
+}
+
+function showOnDisplay(buttonClass, number) {
+    const display = document.querySelector('.display');
+    const button = document.querySelector(buttonClass);
+    button.addEventListener('click', () => {
+        display.textContent += number;
+    })
+}
+
+buttonCall();
