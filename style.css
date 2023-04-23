@@ -31,8 +31,24 @@ button {
 .calculator {
     background-color: rgb(121, 121, 121);
     padding: 10px;
+    padding-top: 50px;
 }
 
 .zero {
-    width: 154px
+    width: 154px;
+}
+
+.reset {
+    background-color: rgb(196, 63, 51);
+}
+
+.divide,
+.multiply,
+.minus,
+.plus {
+    background-color: orange;
+}
+
+.equals {
+    background-color: green;
 }
